@@ -21,6 +21,10 @@ body {
     font-family: Inter, sans-serif;
 }
 
+input {
+    font-family: inherit;
+}
+
 .container {
     max-width: 1239px;
     margin: 0 auto;
