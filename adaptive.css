@@ -1,0 +1,161 @@
+@media screen and (max-width: 1250px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+    .container .logo {
+        padding-left: 15px;
+    }
+
+    .container .sidebar {
+        margin-right: 10px;
+        padding: 60px 34px 20px 20px;
+    }
+
+    .container .profile {
+        padding: 60px 150px 0 96px;
+    }
+
+    .container .profile-active button:nth-child(1) {
+        margin: 0 106px 0 70px;
+    }
+}
+
+@media screen and (max-width: 1137px) {
+    .container .profile {
+        padding: 60px 100px 0 100px;
+    }
+
+    .container .profile-active button:nth-child(1) {
+        margin: 0 50px 0 30px;
+    }
+
+    .container .header-search input {
+        width: 550px;
+    }
+
+}
+
+@media screen and (max-width: 986px) {
+    .container .profile {
+        padding: 60px 65px 0 80px;
+    }
+
+    .container .profile-active button:nth-child(1) {
+        margin: 0 30px 0 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container .header-search input {
+        width: 377px;
+    }
+
+    .container .profile {
+        padding: 60px 65px 0 68px;
+    }
+
+    .container .sidebar {
+        margin-right: 15px;
+    }
+
+    .container .logout {
+        margin-top: 585px;
+    }
+
+    .container .profile-main {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .container .profile-photo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .container .profile-active button:nth-child(1) {
+        margin: 0 81px 0 0;
+    }
+
+    .container .profile-info {
+        padding: 0;
+    }
+
+    .container .logo {
+        display: none;
+    }
+    .container .menu {
+        display: none;
+    }
+    .container .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .container .header {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 807px) {
+    .container .profile-active {
+        text-align: center;
+    }
+    .container .profile-active button {
+        width: 343px;
+    }
+
+    .container .profile-active button:nth-child(1) {
+        margin:0 0 10px 0;
+    }
+
+    .container .profile-main {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .container .logo {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .container .burger {
+        display: none;
+    }
+    .container .arrow {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 21px;
+        fill: #999999;
+    }
+
+    .container .header {
+        margin: 0;
+        background: white;
+        padding: 16px 16px 0 16px;
+        position: relative;
+    }
+    .container .header-search {
+        display: none;
+    }
+    .container .header-icons {
+        display: none;
+    }
+    .container .sidebar {
+        display: none;
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container .profile {
+        border-radius: 0;
+        padding: 35px 16px 21px 16px;
+    }
+
+    .container .footer {
+        display: flex;
+    }
+}
