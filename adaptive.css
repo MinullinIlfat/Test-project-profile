@@ -88,10 +88,14 @@
     .container .menu {
         display: none;
     }
-    .container .burger {
+    /*.container .burger {*/
+    /*    display: block;*/
+    /*    cursor: pointer;*/
+    /*}*/
+    .container .menu-burger {
         display: block;
-        cursor: pointer;
     }
+
     .container .header {
         margin-bottom: 30px;
     }
@@ -120,9 +124,14 @@
         margin: 0 auto;
         padding: 0;
     }
-    .container .burger {
+    /*.container .burger {*/
+    /*    display: none;*/
+    /*}*/
+
+    .container .menu-burger {
         display: none;
     }
+
     .container .arrow {
         display: block;
         position: absolute;

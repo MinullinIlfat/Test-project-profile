@@ -250,23 +250,23 @@ input {
     margin-top: 20px;
 }
 
-.container .burger {
-    display: none;
-}
+/*.container .burger {*/
+/*    display: none;*/
+/*}*/
 
 .container .arrow {
     display: none;
 }
 
-.container .burger:hover svg {
-    color: #FFB13C;
-    fill: #FFB13C;
-}
+/*.container .burger:hover svg {*/
+/*    color: #FFB13C;*/
+/*    fill: #FFB13C;*/
+/*}*/
 
-.container .arrow:hover svg {
-    color: #FFB13C;
-    fill: #FFB13C;
-}
+/*.container .arrow:hover svg {*/
+/*    color: #FFB13C;*/
+/*    fill: #FFB13C;*/
+/*}*/
 
 .footer {
     justify-content: space-between;
@@ -288,5 +288,86 @@ input {
 .footer-icon:hover{
     fill: #FFB13C;
     color: #FFB13C;
+}
+
+.menu-burger {
+    display: none;
+}
+
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+.burger {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    border: none;
+    background: transparent;
+    width: 27px;
+    height: 26px;
+    z-index: 2;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #000;
+}
+
+.burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #000;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+}
+.menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 47px 0;
+    margin: 0;
+    background: #FFB13C;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 221px;
+    z-index: 1;
+}
+.menu-item {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+.menu-item:hover {
+    background: rgba(255,255,255,.2)
+}
+.burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
 }
 
