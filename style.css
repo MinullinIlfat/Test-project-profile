@@ -104,6 +104,7 @@ body {
     background: #FFFFFF;
     border-radius: 32px 32px 0 0;
     margin-right: 19.7px;
+    position: relative;
 }
 
 .container .sidebar-item {
@@ -118,14 +119,24 @@ body {
     border: 0;
 }
 
-.container .sidebar-item:hover, .sidebar-item:hover svg{
+.container .sidebar-item:hover, .sidebar-item:hover svg,
+.sidebar-item:focus, .sidebar-item:focus svg{
     color: #FFB13C;
     fill: #FFB13C;
 }
 
-/*Доделать бордер*/
-.container .sidebar-item:active {
-    border-right: 8px solid #FFB13C;
+.button-border {
+    width: 8px;
+    height: 60px;
+    background: #FFB13C;
+    border-radius: 46px;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.container .sidebar-item:focus .button-border {
+    display: block;
 }
 
 .container .logout {
