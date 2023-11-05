@@ -250,23 +250,14 @@ input {
     margin-top: 20px;
 }
 
-/*.container .burger {*/
-/*    display: none;*/
-/*}*/
-
 .container .arrow {
     display: none;
 }
 
-/*.container .burger:hover svg {*/
-/*    color: #FFB13C;*/
-/*    fill: #FFB13C;*/
-/*}*/
-
-/*.container .arrow:hover svg {*/
-/*    color: #FFB13C;*/
-/*    fill: #FFB13C;*/
-/*}*/
+.container .arrow:hover svg {
+    color: #FFB13C;
+    fill: #FFB13C;
+}
 
 .footer {
     justify-content: space-between;
